@@ -13,6 +13,14 @@
     <PackageProjectUrl>https://github.com/yggdrasill-dev/PhoenixToolkits.AwaitHelpers</PackageProjectUrl>
     <RepositoryUrl>https://github.com/yggdrasill-dev/PhoenixToolkits.AwaitHelpers.git</RepositoryUrl>
     <PackageTags>Valhalla;Await</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
