@@ -9,7 +9,6 @@ public static class ThreadingAwaitExtensions
 	public static CancellationTokenAwaitable.CancellationTokenAwaiter GetAwaiter(this CancellationToken ct)
 		=> new CancellationTokenAwaitable(true, false, ct).GetAwaiter();
 
-	[EditorBrowsable(EditorBrowsableState.Never)]
 	public static CancellationTokenAwaitable ConfigureAwait(this CancellationToken ct, bool continueOnCapturedContext)
 		=> new(continueOnCapturedContext, false, ct);
 
