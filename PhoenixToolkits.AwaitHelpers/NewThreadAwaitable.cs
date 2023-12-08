@@ -13,6 +13,8 @@ public readonly struct NewThreadAwaitable
 		/// <summary>WaitCallback that invokes the Action supplied as object state.</summary>
 		private static readonly WaitCallback _WaitCallbackRunAction = RunAction;
 
+		public bool IsCompleted => false;
+
 		public void UnsafeOnCompleted(Action continuation)
 		{
 			QueueContinuation(continuation, false);

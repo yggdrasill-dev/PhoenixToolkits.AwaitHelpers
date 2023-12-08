@@ -24,6 +24,8 @@ public readonly struct CancellationTokenAwaitable
 		private readonly CancellationToken m_CancellationToken;
 		private readonly bool m_ContinueOnCapturedContext;
 
+		public bool IsCompleted => false;
+
 		public CancellationTokenAwaiter(bool continueOnCapturedContext, CancellationToken cancellationToken)
 		{
 			m_CancellationToken = cancellationToken;
