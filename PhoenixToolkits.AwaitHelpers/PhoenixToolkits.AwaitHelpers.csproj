@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <RootNamespace>Valhalla.Awaitables</RootNamespace>
     <PackageId>PhoenixToolkits.AwaitHelpers</PackageId>
-    <Version>0.0.2</Version>
+    <Version>0.0.3</Version>
     <Authors>Phoenix</Authors>
     <Company>Valhalla</Company>
     <Product>PhoenixToolkits.AwaitHelpers</Product>

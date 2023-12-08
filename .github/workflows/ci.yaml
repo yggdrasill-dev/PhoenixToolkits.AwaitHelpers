@@ -18,6 +18,17 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
 
+    - name: Test
+      run: dotnet test -c ${{env.BuildConfiguration}} --no-restore -l trx
+      
+    - name: Test Report
+      uses: dorny/test-reporter@v1
+      if: success() || failure()    # run this step even if previous step failed
+      with:
+        name: Dotnet Tests            # Name of the check run which will be created
+        path: '**/TestResults/*.trx'    # Path to test results
+        reporter: dotnet-trx
+
     - name: Pack
       run: |
         dotnet pack -c ${{env.BuildConfiguration}} --no-restore PhoenixToolkits.AwaitHelpers/PhoenixToolkits.AwaitHelpers.csproj

@@ -15,6 +15,10 @@ public readonly struct NewThreadAwaitable
 
 		public bool IsCompleted => false;
 
+		public void GetResult()
+		{
+		}
+
 		public void UnsafeOnCompleted(Action continuation)
 		{
 			QueueContinuation(continuation, false);
