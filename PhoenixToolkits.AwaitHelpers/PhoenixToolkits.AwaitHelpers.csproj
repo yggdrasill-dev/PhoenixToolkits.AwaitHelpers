@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net6.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>Valhalla.Awaitables</RootNamespace>
+    <PackageId>PhoenixToolkits.AwaitHelpers</PackageId>
+    <Version>0.0.1</Version>
+    <Authors>Phoenix</Authors>
+    <Company>Valhalla</Company>
+    <Product>PhoenixToolkits.AwaitHelpers</Product>
+    <PackageProjectUrl>https://github.com/yggdrasill-dev/PhoenixToolkits.AwaitHelpers</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/yggdrasill-dev/PhoenixToolkits.AwaitHelpers.git</RepositoryUrl>
+    <PackageTags>Valhalla;Await</PackageTags>
+  </PropertyGroup>
+
+</Project>
